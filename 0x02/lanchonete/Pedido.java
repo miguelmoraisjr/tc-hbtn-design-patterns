@@ -15,9 +15,15 @@ public class Pedido {
 
     @Override
     public String toString() {
-       // return "Fora da caixa:\n" + "- BEBIDA " + itensForaCaixa.toString() + "\n" + "Dentro da caixa:\n" + "- BRINDE ";
-        for (ItemPedido itemPedido : itensDentroCaixa) {
-
+        String respota = "Fora da caixa:\n";
+        for (ItemPedido item : itensForaCaixa) {
+            respota = respota + item.toString();
         }
+        respota = respota + "\n" + "Dentro da caixa:\n";
+
+        for (ItemPedido item : itensDentroCaixa) {
+            respota = respota + item.toString();
+        }
+        return respota;
     }
 }
