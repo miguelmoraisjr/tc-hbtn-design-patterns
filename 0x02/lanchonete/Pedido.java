@@ -17,12 +17,12 @@ public class Pedido {
     public String toString() {
         String respota = "Fora da caixa:\n";
         for (ItemPedido item : itensForaCaixa) {
-            respota = respota + item.toString();
+            respota = respota + "- " + item.getTipo() +  " " + item.getNome() + "\n";
         }
         respota = respota + "\n" + "Dentro da caixa:\n";
 
         for (ItemPedido item : itensDentroCaixa) {
-            respota = respota + item.toString();
+            respota = respota + "- " + item.getTipo() +  " " + item.getNome() + "\n";
         }
         return respota;
     }
