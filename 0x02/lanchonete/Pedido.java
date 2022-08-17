@@ -19,7 +19,7 @@ public class Pedido {
         for (ItemPedido item : itensForaCaixa) {
             respota = respota + "\t\t- " + item.getTipo() +  " " + item.getNome() + "\n";
         }
-        respota = respota + "\n" + "\tDentro da Caixa:\n";
+        respota = respota  + "\tDentro da Caixa:\n";
 
         for (ItemPedido item : itensDentroCaixa) {
             respota = respota + "\t\t- " + item.getTipo() +  " " + item.getNome() + "\n";
