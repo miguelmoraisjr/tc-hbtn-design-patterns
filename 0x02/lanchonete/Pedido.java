@@ -15,14 +15,14 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String respota = "Fora da caixa:\n";
+        String respota = "        Fora da Caixa:\n";
         for (ItemPedido item : itensForaCaixa) {
-            respota = respota + "- " + item.getTipo() +  " " + item.getNome() + "\n";
+            respota = respota + "                - " + item.getTipo() +  " " + item.getNome() + "\n";
         }
-        respota = respota + "\n" + "Dentro da caixa:\n";
+        respota = respota + "\n" + "        Dentro da Caixa:\n";
 
         for (ItemPedido item : itensDentroCaixa) {
-            respota = respota + "- " + item.getTipo() +  " " + item.getNome() + "\n";
+            respota = respota + "                - " + item.getTipo() +  " " + item.getNome() + "\n";
         }
         return respota;
     }
