@@ -1,0 +1,21 @@
+Arquietura Hexagonal
+
+O que é Arquitetura Hexagonal e por quem ela foi criada ?
+- Também chamada de Ports and Adapters, a arquitetura hexagonal é uma forma de organizar o código em camadas, cada qual com a sua responsabilidade, tendo como objetivo isolar totalmente a lógica da aplicação do mundo externo. Este isolamento é feito por meio de Portas e Adaptadores (daí o nome Ports and Adapters), onde as Portas são as interfaces que as camadas de baixo nível expõe, e Adaptadores as implementações para as interfaces em questão (alô inversão de dependência). O isolamento da aplicação vale tanto para entrada de dados quanto saída. Isso significa que o código deve ser agnóstico à forma de acesso, e também ao(s) mecanismo(s) de persistência, envio de notificações, etc.
+
+Quais são os benefícios e recursos que Arquitetura Hexagonal fornece?
+- Como pontos fortes da utilização desta arquitetura, podemos enumerar:
+	- Solução de Serviços Externos Independentes;
+	- Possibilita adiar algumas decisões técnicas;
+	- Criação e substituição de adaptadores;
+	- Fácil de testar a aplicação;
+	- Tecnologias fáceis de trocar;
+
+Quais as diferenças entre Arquitetura Hexagonal e Clean Architecture ?
+- Um objetivo importante da Clean Architecture é fornecer aos desenvolvedores uma maneira de organizar o código de forma que encapsule a lógica de negócios, mas mantenha-o separado do mecanismo de entrega.
+
+Como vimos, a arquitetura hexagonal possui inúmeras vantagens, porém não são em todos os casos que realmente valerá a pena sua utilização.
+Em sistemas muito pequenos ou que dificilmente irá gerar trabalho de manutenção/novas features talvez não seja tão interessante o custo-benefício de sua implementação, já que demanda um alto grau de esforço de desenvolvimento.
+Como em todos os casos no nosso cotidiano, deve ser feita uma análise de viabilidade, já que podem haver formas mais eficazes de resolver o mesmo problema.
+
+
